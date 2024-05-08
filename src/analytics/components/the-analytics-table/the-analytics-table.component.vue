@@ -68,18 +68,18 @@ export default {
 </script>
 
 <template>
-  <pv-datatable :value="this.healthChecks" sortMode="multiple" paginator :rows="5" :rowsPerPageOptions="[1,2,5,10]" tableStyle="min-width: 50rem">
-    <pv-column class="table-column" field="id" :header="recordId" sortable></pv-column>
-    <pv-column class="table-column" field="treadmillId" :header="treadmillId" sortable></pv-column>
-    <pv-column class="table-column" field="year" :header="year" sortable></pv-column>
-    <pv-column class="table-column" field="month" :header="month" sortable></pv-column>
-    <pv-column class="table-column" field="day" :header="day" sortable></pv-column>
-    <pv-column class="table-column" field="hour" :header="hour" sortable></pv-column>
-    <pv-column class="table-column" field="minute" :header="minute" sortable></pv-column>
-    <pv-column class="table-column" field="second" :header="second" sortable></pv-column>
-    <pv-column class="table-column" field="volts" :header="volts" sortable></pv-column>
-    <pv-column class="table-column" field="wats" :header="wats" sortable></pv-column>
-    <pv-column class="table-column" field="hp" :header="hp" sortable></pv-column>
+  <pv-datatable aria-label="The analytics table" :value="this.healthChecks" sortMode="multiple" paginator :rows="5" :rowsPerPageOptions="[1,2,5,10]" tableStyle="min-width: 50rem">
+    <pv-column aria-label="Id column" class="table-column" field="id" :header="recordId" sortable></pv-column>
+    <pv-column aria-label="Treadmill Id column" class="table-column" field="treadmillId" :header="treadmillId" sortable></pv-column>
+    <pv-column aria-label="Year column" class="table-column" field="year" :header="year" sortable></pv-column>
+    <pv-column aria-label="Month column" class="table-column" field="month" :header="month" sortable></pv-column>
+    <pv-column aria-label="Day column" class="table-column" field="day" :header="day" sortable></pv-column>
+    <pv-column aria-label="Hour column" class="table-column" field="hour" :header="hour" sortable></pv-column>
+    <pv-column aria-label="Minute column" class="table-column" field="minute" :header="minute" sortable></pv-column>
+    <pv-column aria-label="Second column" class="table-column" field="second" :header="second" sortable></pv-column>
+    <pv-column aria-label="Volts column" class="table-column" field="volts" :header="volts" sortable></pv-column>
+    <pv-column aria-label="Wats column" class="table-column" field="wats" :header="wats" sortable></pv-column>
+    <pv-column aria-label="Hp column" class="table-column" field="hp" :header="hp" sortable></pv-column>
   </pv-datatable>
 
 </template>

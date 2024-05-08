@@ -8,7 +8,9 @@ export default {
 </script>
 
 <template>
-  <the-analytics-table/>
+  <div class="mt-6" aria-label="The analytics table container">
+    <the-analytics-table/>
+  </div>
 </template>
 
 <style scoped>
